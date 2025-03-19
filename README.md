@@ -13,7 +13,8 @@ New files (e.g., features.cpp, test.cpp) have been added, and the inclusion of C
 3. Now that you have assessed the situation, make the necessary modifications to make sure the Job environment and/or Job executable behaves in the same manner as it was before.
 
 To restore the job environment to its previous behavior, I modified the Jenkinsfile to ensure that the pipeline continues even if some tests fail. Specifically, I added a try-catch block around the test execution step, which allows the pipeline to mark the build as SUCCESS even if a test fails. This ensures the pipeline behaves in the same way as before, where failed tests do not halt the process. The necessary changes have been committed to the repository, and I’ve attached the patch containing the modifications made to the Jenkinsfile.
-git repository : 
+
+git repository : https://github.com/EunbiL/DVOP2025.git
 
 4. Describe another solution to make the Job environment and/or Job executable behave in the same manner as it was before.
 
